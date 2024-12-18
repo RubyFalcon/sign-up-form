@@ -7,11 +7,38 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="small-section">
-        <!-- icon and background image add 40% width -->
-    </div>
-    <div class="large-section">
-        <!-- header and form 60% width -->
+    <div class="content">
+        <div class="small-section">
+            <!-- icon and background image add 40% width -->
+
+             <div class="logo">
+                 <img id= "logo" src="./falcon.png" alt="a falcon logo">
+                 <h1>Falcon flights</h1>
+             </div>
+        </div>
+        <div class="large-section">
+            <!-- header and form 60% width -->
+             <h1 class="title">Falcon flights! You know you need falcons
+                 in your life to help you realize your deepest dreams. <br>
+                You know you want to
+                </h1>
+               <form action="" method="get" class="sign-up-form">
+                    <h2>Lets do this</h2>
+                    <label for="first-name"> 
+                        First Name
+                        <input type="text" name="first-name" id="first-name">
+                    </label>
+                    <label for="first-name"> 
+                        Last name
+                        <input type="text" name="last-name" id="last-name">
+                    </label>
+
+                    <label for="email">Email<input type="email" name="email" id="email"></label>
+                    <label for="phone">Phone<input type="tel" name="phone" id="phone"></label>
+                    <label for="password">Password <input type="password" name="password" id="password"></label>
+                    <label for="confirm-password">Confirm Password <input type="password" name="confirm-password" id="confirm-password"></label>
+                </form>
+        </div>
     </div>
 </body>
 </html>
