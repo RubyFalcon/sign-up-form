@@ -59,16 +59,23 @@ body {
 }
 
 .sign-up-form {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
     background-color: #ffffff;
     box-shadow: 5px 3px 5px 0px #c3c0c0;
     width: 100%;
     padding: 50px;
     margin: 0 auto;
 }
+.sign-up-form h2 {
+    width: 100%;
+}
 
 .form-row {
-    margin-bottom: 40px;
+    
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -76,35 +83,37 @@ body {
 
 }
 
-.form-row input[type="text"], .form-row input[type="email"] {
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="password"], .form-row input[type="tel"] {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 100%;
+
     padding: 7px;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 850px) {
     
     .form-row {
-      flex-direction: row;
-      align-items: flex-start; /* To avoid stretching */
-      margin-bottom: 20px;
+       
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
     }
     .form-row input[type='text'],
      .form-row input[type="email"],
      .form-row select,
      .form-row textarea {
-      width: 100%;
+
       height: initial;
     }
     .form-row label {
      
-      width: 120px;
-      margin-top: 7px;
-      padding-right: 20px;
+     
     }
   
 
