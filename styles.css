@@ -108,6 +108,9 @@ button {
     margin-left: 40px;
 }
 
+.login {
+    margin-left: 40px;
+}
  .login a {
     text-decoration: none;
     color: var(--color);
