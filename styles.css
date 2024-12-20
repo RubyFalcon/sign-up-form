@@ -117,6 +117,25 @@ button {
     font-weight: 700;
 }
 
+
+
+
+.form-row input:invalid {
+    border: 1px solid red;
+  }
+
+  .form-row input:focus, .form-row input:hover {
+    outline: none;
+    border:1px solid var(--color);
+    background-color:#d6d5d5;
+}
+
+
+.form-row input[type="password"]:invalid + span::before {
+    content: "minimum 8 characters";
+    color: red;
+    font-size: 14px;
+  }
 @media only screen and (min-width: 850px) {
     
     .form-row {
@@ -135,10 +154,7 @@ button {
 
       height: initial;
     }
-    .form-row label {
-     
-     
-    }
+
   
 
   }
